@@ -1,0 +1,156 @@
+body, html {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+a,
+p {
+    color: white !important;
+    text-decoration: none;
+    font-size: 12px;
+    clear: both;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.signIn .signBG {
+    background: url(../img/bgLogin.jpg)center no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    width: 50%;
+}
+
+    .signIn .signBG:before {
+        content: '';
+        /*background-color: rgba(255, 109, 33, 0.5);*/
+        background-color: rgba(36, 42, 110, 0.7);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+.signIn .signForm {
+    background: white;
+    width: 50%;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    .signIn .signForm .userinfo {
+        background: #f26229;
+        padding: 20px;
+    }
+
+    .signIn .signForm .contentLogin .nav-pills .nav-link {
+        width: 200px;
+        color: black;
+        font-weight: 700;
+        border-radius: 0;
+    }
+
+        .signIn .signForm .contentLogin .nav-pills .nav-link.active,
+        .signIn .signForm .contentLogin .nav-pills .show > .nav-link {
+            background-color: #f26229;
+            color: white;
+        }
+
+    .signIn .signForm .userinfo .form-group {
+        margin-bottom: 10px;
+    }
+
+        .signIn .signForm .userinfo .form-group .form-control {
+            background-color: #f6f6f6;
+            border: none;
+            color: #0d0d0d;
+            padding: 10px 24px;
+            text-align: left;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 16px;
+            margin: 0;
+            width: 100%;
+            border: 2px solid #f6f6f6;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+        }
+
+    .signIn .signForm .userinfo label {
+        color: white;
+        font-size: 16px;
+        line-height: 28px;
+        outline: none;
+        font-weight: 600;
+    }
+
+    .signIn .signForm .lgBtn {
+        font-size: 15px;
+        background: white;
+        color: #f26229;
+        width: 200px;
+        height: 40px;
+        font-weight: bold;
+        border: 2px solid white;
+        border-radius: 50px;
+        line-height: 36px;
+        display: block;
+        margin: 0 auto;
+        text-transform: uppercase;
+        box-shadow: 0 10px 30px 0 rgba(36, 42, 110, 0.2);
+    }
+
+        .signIn .signForm .lgBtn:hover {
+            border: 2px solid #242a6e;
+        }
+
+.underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #242a6e;
+    content: "";
+    transition: width 0.2s;
+}
+
+.underlineHover:hover:after {
+    width: 100%;
+}
+
+@media(max-width:850px) {
+    .signIn .signBG {
+        width: 30%;
+    }
+
+    .signIn .signForm {
+        width: 70%;
+    }
+}
+
+@media(max-width:850px) {
+    .signIn .signBG {
+        width: 100%;
+    }
+
+        .signIn .signBG:before {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+    .signIn .signForm {
+        position: absolute;
+        width: 100%;
+        background: transparent;
+    }
+}
